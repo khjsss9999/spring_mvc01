@@ -7,7 +7,6 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
 // 컨트롤러를 어노테이션 하지 않으면 반드시 Controller 구현해야 한다.
-
 public class Start1Controller implements Controller{
 	
 	// 실제 실행하는 메서드
@@ -26,7 +25,7 @@ public class Start1Controller implements Controller{
 		
 		ModelAndView mv = new ModelAndView();
 		// jsp를 붙이지 않는다.
-		mv.setViewName("result");
+		mv.setViewName("result1");
 		
 		// 일처리 = 비즈니스로직 => 서비스 => 서비스임플 => 멤퍼(DAO) => DB 처리
 		
