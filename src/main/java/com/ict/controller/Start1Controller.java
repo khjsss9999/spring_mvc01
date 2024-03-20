@@ -13,7 +13,8 @@ public class Start1Controller implements Controller{
 	// 어노테이션을 하지 않으면 반환형은 ModelAndView 이다.
 	// 어노테이션을 하면 반환형은 String 또는 ModelAndView 이다. 
 	@Override
-	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
+	public ModelAndView handleRequest
+	(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		// 일처리 저장하는 곳이 Model 이고 
 		// 되돌아갈 jsp를 지정하는건 View 이다. 
 		// 방법1
