@@ -17,6 +17,10 @@
 	function maria_list() {
 		location.href="maria_list.do";
 	}
+	function guestbook_go() {
+		location.href="guestbook_go.do";
+	}
+	
 	
 	
 </script>
@@ -37,7 +41,7 @@
 		<p>수1 : <input type="number" size="15" name="s1" required> </p>
 		<p>수2 : <input type="number" size="15" name="s2" required> </p>
 		<p> 연산자 :
-			<input type="radio" name="op" value="+" checked> 이것은 + 인풋이다.
+			<input type="radio" name="op" value="+" checked> +
 			<input type="radio" name="op" value="-" > -
 			<input type="radio" name="op" value="*" > *
 			<input type="radio" name="op" value="/" > /
@@ -85,8 +89,9 @@
 		</form>
 		<hr>
 		
-		<button onclick="oracle_list">오라클DB UserMembers list 보기</button>
-		<button onclick="maria_list">MariaDB UserMembers list 보기</button>
+		<button onclick="oracle_list()">오라클DB UserMembers list 보기</button>
+		<button onclick="maria_list()">MariaDB UserMembers list 보기</button>
+		<button onclick="guestbook_go()">guestbook</button>
 </body>
 </html>
 

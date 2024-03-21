@@ -28,7 +28,7 @@ public class FileController {
 	// cos 라이브러리 사용
 	@PostMapping("f_up.do")
 	public ModelAndView fileUp(HttpServletRequest request, HttpServletResponse response) {
-		ModelAndView mv = new ModelAndView("test3/result");
+		ModelAndView mv = new ModelAndView("test03/result");
 		String path = request.getSession().getServletContext().getRealPath("/resources/upload");
 		try {
 			MultipartRequest mr = 
@@ -107,7 +107,7 @@ public class FileController {
 	) {
 		try {
 			
-			ModelAndView mv = new ModelAndView("test3/result");
+			ModelAndView mv = new ModelAndView("test03/result");
 			String path = request.getSession().getServletContext().getRealPath("/resources/upload/");
 			
 			// Spring 파일업로드의 단점은 같은 이름 처리를 하지 않습니다.
